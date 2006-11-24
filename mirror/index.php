@@ -33,7 +33,7 @@ else {
 <div id="footer">
 	<div id="nav">
 	<ul>
-		<li><a style="width: 9em;" href="index.php">bio</a></li>
+		<li><a style="width: 9em;" href="index.php">home</a></li>
 		<li><a style="width: 11em;" href="index.php?content=credo">credo</a></li>
 		<li><a style="width: 13em;" href="index.php?content=projects">projects</a></li>
 		<li><a style="width: 15em;" href="index.php?content=academics">academics</a></li>
@@ -41,11 +41,11 @@ else {
 	</div>
 	<div id="titlebar">
 		<img src="img/head.png" width="240" height="75" alt="head" />
-<!--Creative Commons License-->
-<div id="cc_license">
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" style="border-width: 0" src="http://creativecommons.org/images/public/somerights20.png"/></a>
-<!--/Creative Commons License-->
-</div>
+		<!--Creative Commons License-->
+		<div id="cc_license">
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="This website is licensed under the Creative Commons License"><img alt="Creative Commons License" style="border-width: 0" src="http://creativecommons.org/images/public/somerights20.png"/></a>
+		</div>
+		<!--/Creative Commons License-->
 		<h1>~phinze</h1>
 	</div>
 	<div id="qotd">&ldquo;<q>Computers are useless, they can only give you answers.</q>&rdquo; <cite>Picasso</cite></div>

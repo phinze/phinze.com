@@ -1,0 +1,18 @@
+#-------------------------------------------------------------------
+# Student Media Interactive
+# Project Info 
+#
+# Variables specific to this project for the various scripts
+# that will work with it...  most notably the deploy scripts.
+#
+#-------------------------------------------------------------------
+
+PROJECT_NAME="Paul Hinze MSCS Web Site"
+
+LIVE_SERVER="pascal.mscs.mu.edu"
+LIVE_USER="phinze"
+LIVE_PATH="/home/phinze/public_html/"
+
+TEST_SERVER=""
+TEST_USER=""
+TEST_PATH=""

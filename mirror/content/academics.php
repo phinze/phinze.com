@@ -1,6 +1,5 @@
 <h1>Academics</h1>
-<p>I am currently a <strong>Junior</strong> at <a href="http://mu.edu/" title="Marquette University">Marquette University</a> majoring in <a href="http://mscs.mu.edu/" title="Math, Statistics, and Computer Science Department">Computer Science</a> and minoring in <a href="http://mu.edu/fol/" title="Foreign Language Department, Spanish">Spanish Language and Literature</a> and <a href="http://mu.edu/english" title="English Department">English Literature</a>.</p>
-<p>The following is a list of the courses I have taken:</p>
+<p>I am currently a <strong>Junior</strong> at <a href="http://mu.edu/" title="Marquette University">Marquette University</a> majoring in <a href="http://mscs.mu.edu/" title="Math, Statistics, and Computer Science Department">Computer Science</a> and minoring in <a href="http://mu.edu/fol/" title="Foreign Language Department, Spanish">Spanish Language and Literature</a> and <a href="http://mu.edu/english" title="English Department">English Literature</a>.  The following is a list of the courses I have taken:</p>
 <ul>
 	<li>Fall 2004
 		<ul>
@@ -30,7 +29,7 @@
 	<li>Spring 2006
 		<ul>
 			<li>COSC 126: Operating Systems</li>
-			<li>COSC 162: Data Structures &amp; Algorithms II<li>
+			<li>COSC 162: Data Structures &amp; Algorithms II</li>
 			<li>HOPR 020: Ignatian Spirituality</li>
 			<li>SPAN 090: Spanish Language and Literature</li>
 		</ul>

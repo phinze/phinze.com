@@ -26,12 +26,12 @@ body {
 }
 
 #content {
-	padding: 1em 1em 10em 22em;
+	padding: 1em 1em 10em 21em;
 }
 
 #footer {
 	position: relative;
-	margin-top: -22em;
+	margin-top: -21em;
 }
 
 #nav ul {

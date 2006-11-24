@@ -11,6 +11,10 @@ body {
     background-image: none; /* override upgrade message */
 }
 
+a, a:visited, a:active {
+	color: #a30;
+}
+
 #titlebar {
     background: #c63 url('../img/titlebar-shadow-top.png') repeat-x top;
 }
