@@ -1,0 +1,66 @@
+/*
+ * (( ~phinze ))
+ * 
+ * layout.css
+ *
+ * All layout related styles: position, float, margin, padding.
+ */
+
+html {
+	height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	height: 100%;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+* html #wrapper {
+	height: 100%;
+}
+
+#content {
+	padding: 1em 1em 10em 22em;
+}
+
+#footer {
+	position: relative;
+	margin-top: -22em;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0 0 0.5em 0;
+}
+
+#nav a {
+	padding-right: 0.8em;
+    display: block;
+}
+
+#titlebar img {
+	float: left;
+	margin: 0 0 0 17px;
+}
+
+#titlebar h1 {
+	margin: 0;
+	padding: 10px 267px;
+	margin-bottom: 3px;
+}
+
+#cc_license {
+    float: right;
+    margin: 2em;
+
+}
+
+#qotd {
+	padding: 0.5em;
+}

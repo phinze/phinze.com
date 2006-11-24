@@ -1,0 +1,13 @@
+#titlebar {
+    background-image: none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='img/titlebar-shadow-top.png',sizingMethod='scale');
+}
+
+#titlebar h1 {
+    background-image: none;
+}
+
+#titlebar img {
+    behavior: url('js/pngbehavior.htc');
+}
+

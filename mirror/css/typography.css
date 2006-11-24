@@ -1,0 +1,108 @@
+/*
+ * (( phinze.com ))
+ * 
+ * typography.css
+ *
+ * Typography Template based on Owen Briggs' work.
+ * For now attempting to keep this strictly text sizing, spacing and weight.
+ */
+
+body {
+	font-family: courier new, courier, monospace;
+	font-size: 76%;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:link {
+}
+a:visited {
+}
+a:active {
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+	font-size: 2.0em;
+	font-weight: bold;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+h2 {
+	font-size: 1.7em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.4em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.2em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: bold;
+}
+h5 {
+	font-size: 1.0em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: bold;
+}
+h6 {
+	font-size: 0.8em;
+	margin: 1.2em 0em 1.2em 0em;
+	font-weight: bold;
+}
+ol, ul, li {
+	font-size: 1.0em;
+	line-height: 1.8em;
+	margin-top: 0.2em;
+	margin-bottom: 0.1em; 
+	}
+p {
+	font-size: 1.0em;
+	line-height: 1.8em;
+	margin: 1.2em 0em 1.2em 0em;
+}
+li > p {
+	margin-top: 0.2em;
+}
+pre {
+	font-family: monospace;
+	font-size: 1.0em;
+}
+strong, b {
+	font-weight: bold;
+}
+
+/*
+ * fix q tags; we'll manually include quote entities so IE,
+ * the hater of the q tag, remains supported
+ * see: http://alistapart.com/articles/qtag/
+ */
+q:before, q:after { content: ""; }
+
+/* custom classes */
+.sig {
+    font-style: italic;
+}
+
+/* specific page-related typography */
+
+#nav li {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#titlebar h1 {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+#qotd {
+	text-align: right;
+	font-size: 16px;
+}
