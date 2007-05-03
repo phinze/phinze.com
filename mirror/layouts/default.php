@@ -2,18 +2,18 @@
 <html>
 <head>
     <title>Paul Hinze, Marquette University COSC Student</title>
-    <link rel="stylesheet" href="css/nn4.css" type="text/css" />
+    <link rel="stylesheet" href="http://mscs.mu.edu/~phinze/css/nn4.css" type="text/css" />
     <style type="text/css">
-    @import url("css/typography.css");
-    @import url("css/design.css");
-    @import url("css/layout.css");
+    @import url("http://mscs.mu.edu/~phinze/css/typography.css");
+    @import url("http://mscs.mu.edu/~phinze/css/design.css");
+    @import url("http://mscs.mu.edu/~phinze/css/layout.css");
     </style>
     <!--[if IE]>
-    <link rel="stylesheet" type="text/css" href="css/ie-all.css" />
+    <link rel="stylesheet" type="text/css" href="http://mscs.mu.edu/~phinze/css/ie-all.css" />
     <![endif]-->
 
     <!--[if lte IE 6]>
-    <link rel="stylesheet" type="text/css" href="css/ie-lte6.css" />
+    <link rel="stylesheet" type="text/css" href="http://mscs.mu.edu/~phinze/css/ie-lte6.css" />
     <![endif]-->
 </head>
 
