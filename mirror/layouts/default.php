@@ -27,10 +27,10 @@
 <div id="footer">
 	<div id="nav">
 	<ul>
-		<li><a style="width: 9em;" href="/">home</a></li>
-		<li><a style="width: 11em;" href="/credo/">credo</a></li>
-		<li><a style="width: 13em;" href="/projects/">projects</a></li>
-		<li><a style="width: 15em;" href="/academics/">academics</a></li>
+		<li><a style="width: 9em;" href="/~phinze/">home</a></li>
+		<li><a style="width: 11em;" href="/~phinze/credo/">credo</a></li>
+		<li><a style="width: 13em;" href="/~phinze/projects/">projects</a></li>
+		<li><a style="width: 15em;" href="/~phinze/academics/">academics</a></li>
 	</ul>
 	</div>
 	<div id="titlebar">
