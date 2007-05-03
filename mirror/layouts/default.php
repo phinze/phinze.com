@@ -20,23 +20,17 @@
 <body>
 <div id="wrapper">
 <div id="content">
-<?php
-if ( isset( $_GET['content'] ) ) {
-	include('content/' . $_GET['content'] . '.php');
-}
-else {
-	include('content/main.php');
-}
-?>
+<h1><?php $cd->displayTitle(); ?></h1>
+<?php $cd->displayContent(); ?>
 </div>
 </div>
 <div id="footer">
 	<div id="nav">
 	<ul>
-		<li><a style="width: 9em;" href="index.php">home</a></li>
-		<li><a style="width: 11em;" href="index.php?content=credo">credo</a></li>
-		<li><a style="width: 13em;" href="index.php?content=projects">projects</a></li>
-		<li><a style="width: 15em;" href="index.php?content=academics">academics</a></li>
+		<li><a style="width: 9em;" href="/">home</a></li>
+		<li><a style="width: 11em;" href="/credo/">credo</a></li>
+		<li><a style="width: 13em;" href="/projects/">projects</a></li>
+		<li><a style="width: 15em;" href="/academics/">academics</a></li>
 	</ul>
 	</div>
 	<div id="titlebar">

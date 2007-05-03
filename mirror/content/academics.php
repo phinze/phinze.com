@@ -1,4 +1,4 @@
-<h1>Academics</h1>
+<?php $title = "Academics"; ?>
 <p>I am currently a <strong>Junior</strong> at <a href="http://mu.edu/" title="Marquette University">Marquette University</a> majoring in <a href="http://mscs.mu.edu/" title="Math, Statistics, and Computer Science Department">Computer Science</a> and minoring in <a href="http://mu.edu/fol/" title="Foreign Language Department, Spanish">Spanish Language and Literature</a> and <a href="http://mu.edu/english" title="English Department">English Literature</a>.  The following is a list of the courses I have taken:</p>
 <ul>
 	<li>Fall 2004

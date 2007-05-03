@@ -1,1 +1,5 @@
-RewriteRule ^(.*) /index.php?content=$1?
+#kOptions +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /~phinze/index.php?content=$1
