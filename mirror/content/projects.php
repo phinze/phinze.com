@@ -1,4 +1,4 @@
-<h1>Projects</h1>
+<?php $pagetitle="Projects"; ?>
 <h2>Programming & Scripting</h2>
 <dl>
 	<dt>xinu</dt>
