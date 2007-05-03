@@ -20,8 +20,8 @@
 <body>
 <div id="wrapper">
 <div id="content">
-<h1><?php $cd->displayTitle(); ?></h1>
-<?php $cd->displayContent(); ?>
+<h1><?php $this->displayTitle(); ?></h1>
+<?php $this->displayContent(); ?>
 </div>
 </div>
 <div id="footer">
