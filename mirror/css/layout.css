@@ -7,41 +7,32 @@
  */
 
 html {
-	height: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
-	height: 100%;
 }
 
-#wrapper {
-	position: relative;
-	min-height: 100%;
-}
-
-* html #wrapper {
-	height: 100%;
-}
 
 #content {
-	padding: 1em 1em 10em 21em;
+	padding: 1em 1em 0em 21em;
 }
 
 #footer {
-	position: relative;
-	margin-top: -21em;
 }
 
 #nav ul {
 	margin: 0;
 	padding: 0 0 0.5em 0;
+	width: 20%;
+	float: left;
 }
 
 #nav a {
 	padding-right: 0.8em;
     display: block;
+	width: 25%;
 }
 
 #titlebar img {

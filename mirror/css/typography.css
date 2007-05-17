@@ -7,8 +7,15 @@
  * For now attempting to keep this strictly text sizing, spacing and weight.
  */
 
-body {
+h1, h2, h3, h4, h5, h6 {
 	font-family: courier new, courier, monospace;
+}
+
+body, ol, ul, dl, li, p {
+	font-family: helvetica, verdana, times, serif;
+}
+
+body {
 	font-size: 76%;
 }
 
@@ -23,54 +30,58 @@ a:visited {
 a:active {
 }
 a:hover {
+	color: #000;
     text-decoration: underline;
 }
-h1 {
-	font-size: 2.0em;
+#content h1 {
+	font-size: 2.9em;
 	font-weight: bold;
-	margin-top: 0em;
-	margin-bottom: 0em;
+	margin: 0;
+	border-bottom: solid black 1px;
 }
-h2 {
+#content h2 {
 	font-size: 1.7em;
-	margin: 1.2em 0em 1.2em 0em;
+	margin: 0.5em 0;
 	font-weight: normal;
+	border-bottom: solid gray 1px;
 }
-h3 {
+#content h3 {
 	font-size: 1.4em;
-	margin: 1.2em 0em 1.2em 0em;
+	margin: 0.5em 0;
 	font-weight: normal;
 }
-h4 {
+#content h4 {
 	font-size: 1.2em;
-	margin: 1.2em 0em 1.2em 0em;
+	margin: 0.5em 0;
 	font-weight: bold;
 }
-h5 {
+#content h5 {
 	font-size: 1.0em;
-	margin: 1.2em 0em 1.2em 0em;
+	margin: 0.5em 0;
 	font-weight: bold;
 }
-h6 {
+#content h6 {
 	font-size: 0.8em;
-	margin: 1.2em 0em 1.2em 0em;
+	margin: 0.5em 0;
 	font-weight: bold;
 }
-ol, ul, li {
-	font-size: 1.0em;
-	line-height: 1.8em;
+#content ol, ul, dl, li {
+	font-size: 1.2em;
+	line-height: 1.4em;
 	margin-top: 0.2em;
 	margin-bottom: 0.1em; 
 	}
-p {
-	font-size: 1.0em;
-	line-height: 1.8em;
-	margin: 1.2em 0em 1.2em 0em;
+#content p {
+	font-size: 1.2em;
+	line-height: 1.6em;
+	margin: 1em 0em 1em 0em;
+	letter-spacing: 0.05em;
+	text-align: justify;
 }
-li > p {
+#content li > p {
 	margin-top: 0.2em;
 }
-pre {
+#content pre {
 	font-family: monospace;
 	font-size: 1.0em;
 }

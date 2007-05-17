@@ -7,7 +7,7 @@
  */
 
 body {
-    background-color: #f96;
+    background-color: #ccc;
     background-image: none; /* override upgrade message */
 }
 
@@ -16,7 +16,7 @@ a, a:visited, a:active {
 }
 
 #titlebar {
-    background: #c63 url('../img/titlebar-shadow-top.png') repeat-x top;
+    background: #6c3 url('../img/titlebar-shadow-top.png') repeat-x top;
 }
 
 #titlebar h1 {
@@ -38,10 +38,11 @@ blockquote {
 	text-align: right;
 	border-bottom: solid black 2px;
 	color: black;
+	padding: 0.2em 0;
 }
 
 #nav a:hover {
 	background-color: black;
-	color: #f96; 
+	color: #9f6; 
 	text-decoration: none;
 }
