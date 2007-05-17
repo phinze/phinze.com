@@ -28,7 +28,7 @@
 <body>
 <div id="wrapper">
 <div id="footer">
-	<div id="qotd">&ldquo;<q>Computers are useless, they can only give you answers.</q>&rdquo; <cite>Picasso</cite></div>
+	<div id="qotd"><?php include('quote.php'); ?></div>
 	<div id="titlebar">
 		<img src="<?php echo $this->getHomeUrl(); ?>img/head.png" width="240" height="75" alt="head" />
 		<!--Creative Commons License-->
@@ -36,7 +36,7 @@
 		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="This website is licensed under the Creative Commons License"><img alt="Creative Commons License" style="border-width: 0" src="http://creativecommons.org/images/public/somerights20.png"/></a>
 		</div>
 		<!--/Creative Commons License-->
-		<h1>~phinze/<?php echo strtolower( $this->contentTitle ); ?></h1>
+		<h1>~phinze/<?php if($this->contentTitle) echo strtolower( $this->contentTitle ) . '/'; ?></h1>
 	</div>
 	<div id="nav">
 	<ul>
