@@ -26,31 +26,27 @@
 </head>
 
 <body>
-<div id="wrapper">
-<div id="footer">
-	<div id="qotd"><?php include('quote.php'); ?></div>
-	<div id="titlebar">
-		<img src="<?php echo $this->getHomeUrl(); ?>img/head.png" width="240" height="75" alt="head" />
-		<!--Creative Commons License-->
-		<div id="cc_license">
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="This website is licensed under the Creative Commons License"><img alt="Creative Commons License" style="border-width: 0" src="http://creativecommons.org/images/public/somerights20.png"/></a>
-		</div>
-		<!--/Creative Commons License-->
-		<h1>~phinze/<?php if($this->contentTitle) echo strtolower( $this->contentTitle ) . '/'; ?></h1>
-	</div>
-	<div id="nav">
-	<ul>
-		<li><a style="width: 14em;" href="<?php echo $this->getHomeUrl(); ?>">home</a></li>
-		<li><a style="width: 12em;" href="<?php echo $this->getHomeUrl(); ?>projects/">projects</a></li>
-		<li><a style="width: 10em;" href="<?php echo $this->getHomeUrl(); ?>philosophy/">philosophy</a></li>
-		<li><a style="width: 8em;" href="<?php echo $this->getHomeUrl(); ?>academics/">academics</a></li>
-	</ul>
-	</div>
+<div id="qotd"><?php include('quote.php'); ?></div>
+<div id="titlebar">
+	<a href="<?php echo $this->getHomeUrl(); ?>"><img src="<?php echo $this->getHomeUrl(); ?>img/head.png" width="240" height="75" alt="head" /></a>
+	<h1>~phinze/<?php if($this->contentTitle) echo strtolower( $this->contentTitle ) . '/'; ?></h1>
+</div>
+<div id="nav">
+<ul>
+	<li><a href="<?php echo $this->getHomeUrl(); ?>">home</a></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>about/">about me</a></dt><dd>A little bit of detail on who I am, what I do, and why I do it.</dd></dl></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>software/">software</a></dt><dd>Bits, bytecode, patches and hacks.</dd></dl></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>webdev/">web development</a></dt><dd></dd></dl></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>academics/">academics</a></dt><dd>Information about courses I have taken and details of my toils at Marquette University.</dd></dl></li>
+</ul>
 </div>
 <div id="content">
 <?php $this->displayContent(); ?>
 </div> <!-- content -->
-</div> <!-- wrapper -->
+<div id="footer">
+<div class="right">Some rights reserved.  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/" title="This website is licensed under the Creative Commons License">CC BY-NC-SA 2.5</a></div>
+This page was last updated: <?php $this->displayLastMod(); ?>
+</div>
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <Work rdf:about="">

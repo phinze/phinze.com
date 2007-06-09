@@ -1,10 +1,10 @@
 <?php $pagetitle = "Academics"; ?>
 <h2>Summary</h2>
 
-<p>I am currently a <strong>Junior</strong> at <a href="http://mu.edu/" title="Marquette University">Marquette University</a> majoring in <a href="http://mscs.mu.edu/" title="Math, Statistics, and Computer Science Department">Computer Science</a> and minoring in <a href="http://mu.edu/fol/" title="Foreign Language Department, Spanish">Spanish Language and Literature</a> and <a href="http://mu.edu/english" title="English Department">English Literature</a>.  I am spending the Fall semester abroad in Madrid, Spain through the <a href="http://www.marquette.edu/madrid/index.shtml" title="Marquette en Madrid Project Website">Marquette en Madrid</a> program.</p>
+<p>I am currently a <strong>Junior</strong> at <a href="http://mu.edu/" title="Marquette University">Marquette University</a> majoring in <a href="http://mscs.mu.edu/" title="Math, Statistics, and Computer Science Department">Computer Science</a> and minoring in <a href="http://mu.edu/fol/" title="Foreign Language Department, Spanish">Spanish Language and Literature</a> and <a href="http://mu.edu/english" title="English Department">English Literature</a>.  I am spending the Spring semester abroad in Madrid, Spain through the <a href="http://www.marquette.edu/madrid/index.shtml" title="Marquette en Madrid Project Website">Marquette en Madrid</a> program.</p>
 
 <h2>List of Courses</h2>
-<ul>
+<ul id="courses">
 	<li>Fall 2004
 		<ul>
 			<li>ENGL 005: Honors English I</li>
@@ -48,5 +48,25 @@
 			<li>ENGL 198: American Cultural Memory of the Holocaust</li>
 		</ul>
 	</li>
+	<li>Spring 2007 [Madrid]
+		<ul>
+			<li>Literatura Espanola</li>
+			<li>Filosofia: Etica</li>
+			<li>Teologia: Las cartas de San Pablo</li>
+			<li>Sintaxis comparada Ingles / Espanol II</li>
+		</ul>
+	</li>
 </ul>
 
+<script type="text/javascript">
+function hideCourses() {
+	courses_ul = document.getElementById('courses');
+	years_li = courses_ul.getElementsByTagName('li');
+	for (i = 0; i < years_li.length; i++) {
+		document.write((years_li[i].innerHTML));
+	}
+}
+
+//hideCourses();
+
+</script>

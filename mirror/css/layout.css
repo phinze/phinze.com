@@ -16,23 +16,43 @@ body {
 
 
 #content {
-	padding: 1em 1em 0em 21em;
+	padding: 1em 23% 0em 1em;
 }
 
 #footer {
+	clear: both;
+	margin: 1em;
+	padding: 0.3em 0;
 }
 
 #nav ul {
-	margin: 0;
-	padding: 0 0 0.5em 0;
+	float: right;
 	width: 20%;
-	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	padding: 0;
+	margin: 0;
+}
+
+#nav dl {
+}
+
+#nav dd {
+	padding: 0;
+	margin: 0 0 0 1.2em;
 }
 
 #nav a {
-	padding-right: 0.8em;
+	padding: 0.5em 0 0.2em 0.8em;
     display: block;
-	width: 25%;
+}
+
+
+#titlebar {
+	height: 74px; /* lock this to prevent layout breaking on text shrink */
 }
 
 #titlebar img {
@@ -41,6 +61,7 @@ body {
 }
 
 #titlebar h1 {
+	height: 55px; /* lock this to prevent layout breaking on text shrink */
 	margin: 0;
 	padding: 10px 267px;
 	margin-bottom: 3px;
@@ -48,10 +69,14 @@ body {
 
 #cc_license {
     float: right;
-    margin: 2em;
+    margin: 21px;
 
 }
 
 #qotd {
 	padding: 0.5em;
+}
+
+.right {
+	float: right;
 }
