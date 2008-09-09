@@ -3,6 +3,7 @@
 <head>
     <title>Paul Hinze, Marquette University COSC Student</title>
     <link rel="stylesheet" href="<?php echo $this->getHomeUrl(); ?>css/nn4.css" type="text/css" />
+	<link rel="shortcut icon" href="<?php echo $this->getHomeUrl(); ?>favicon.ico" type="image/x-icon" />
     <style type="text/css">
 	@import url("<?php echo $this->getHomeUrl(); ?>css/typography.css");
     @import url("<?php echo $this->getHomeUrl(); ?>css/design.css");
@@ -29,14 +30,17 @@
 <div id="qotd"><?php include('quote.php'); ?></div>
 <div id="titlebar">
 	<a href="<?php echo $this->getHomeUrl(); ?>"><img src="<?php echo $this->getHomeUrl(); ?>img/head.png" width="240" height="75" alt="head" /></a>
+	<!--Creative Commons License-->
+	<div id="cc_license">
+	</div>
+	<!--/Creative Commons License-->
 	<h1>~phinze/<?php if($this->contentTitle) echo strtolower( $this->contentTitle ) . '/'; ?></h1>
 </div>
 <div id="nav">
 <ul>
 	<li><a href="<?php echo $this->getHomeUrl(); ?>">home</a></li>
-	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>about/">about me</a></dt><dd>A little bit of detail on who I am, what I do, and why I do it.</dd></dl></li>
-	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>software/">software</a></dt><dd>Bits, bytecode, patches and hacks.</dd></dl></li>
-	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>webdev/">web development</a></dt><dd></dd></dl></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>projects/">projects</a></dt><dd>Serves as both an archive of past work and a list of present interests and endeavors.</dd></dl></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>philosophy/">philosophy</a></dt><dd>Rants and reflections on the "why" of topics both technical and general.</dd></dl></li>
 	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>academics/">academics</a></dt><dd>Information about courses I have taken and details of my toils at Marquette University.</dd></dl></li>
 </ul>
 </div>

@@ -19,13 +19,6 @@ a, a:visited, a:active {
 	color: black;
 }
 	
-#qotd {
-	color: #999;
-}
-
-#qotd:hover {
-	color: #000;
-}
 
 #titlebar {
     background: #6c3 url('../img/titlebar-shadow-top.png') repeat-x top;
