@@ -1,13 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-    <title>Paul Hinze, Marquette University COSC Student</title>
-    <link rel="stylesheet" href="<?php echo $this->getHomeUrl(); ?>css/nn4.css" type="text/css" />
+    <title>Paul Hinze | A Convergence of Distractions</title>
 	<link rel="shortcut icon" href="<?php echo $this->getHomeUrl(); ?>favicon.ico" type="image/x-icon" />
     <style type="text/css">
-	@import url("<?php echo $this->getHomeUrl(); ?>css/typography.css");
-    @import url("<?php echo $this->getHomeUrl(); ?>css/design.css");
-    @import url("<?php echo $this->getHomeUrl(); ?>css/layout.css");
+    @import url("<?php echo $this->getHomeUrl(); ?>css/phinze.css");
 	<?php
 		$chars = array( 'c', '6', '3' );
 		shuffle( $chars );

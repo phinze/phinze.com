@@ -1,0 +1,71 @@
+/*
+ * (( phinze.com )) - phinze.css
+ * All styles for phinze.com
+ */
+
+* { margin: 0; padding: 0; }
+*
+/* Typography based on Owen Briggs' work. */  
+h1, h2, h3, h4, h5, h6, dt { font-family: courier new, courier, monospace; }
+body, ol, ul, li, dl, dd, dt, p { font-family: courier new , verdana, times, serif; }
+body { font-size: 76%; }
+a { text-decoration: none; font-weight: bold; }
+a:link { }
+a:visited { }
+a:active { }
+a:hover { color: #000; text-decoration: underline; }
+#content h1 { font-size: 2.9em; font-weight: bold; margin: 0; border-bottom: solid black 1px; }
+#content h2 { font-size: 1.7em; margin: 0.5em 0; font-weight: bold; border-bottom: solid gray 1px; }
+#content h3 { font-size: 1.4em; margin: 0.5em 0; font-weight: normal; }
+#content h4 { font-size: 1.2em; margin: 0.5em 0; font-weight: bold; }
+#content h5 { font-size: 1.0em; margin: 0.5em 0; font-weight: bold; }
+#content h6 { font-size: 0.8em; margin: 0.5em 0; font-weight: bold; }
+strong, b { font-weight: bold; } 
+
+body { background-color: #ccc; background-image: none; overflow-y: scroll; }
+a, a:visited, a:active { color: #a30; }
+
+#qotd { padding: 0.5em; text-align: right; font-size: 16px; }
+
+#titlebar { height: 74px; background: #6c3 url('../img/titlebar-shadow-top.png') repeat-x top; }
+#titlebar h1 { 
+	background: url('../img/titlebar-shadow-bot.png') repeat-x bottom; font-size: 48px; font-weight: bold; 
+	height: 55px; margin: 0; padding: 10px 267px; margin-bottom: 3px; 
+} 
+#titlebar img { float: left; margin: 0 0 0 17px; border: 0; }
+
+#nav { font-family: helvetica, verdana, times, serif !important; }
+#nav ul { float: right; width: 20%; list-style: none; }
+#nav li { font-size: 16px; font-weight: bold; } 
+#nav dd { font-size: 10px; font-weight: normal; padding: 0; margin: 0 0 0 1.2em; }
+#nav a { border-bottom: solid black 2px; color: black; padding: 0.5em 0 0.2em 0.8em; display: block; }
+#nav a:hover { background-color: black; color: #9f6; text-decoration: none; }
+
+#content { padding: 1em 23% 0em 1em; }
+#content ol, #content ul, #content li { font-size: 1.0em; line-height: 1.4em; margin-top: 0.2em; margin-bottom: 0.1em; }
+#content p, #content dl { font-size: 1.2em; line-height: 1.6em; margin: 1em 0em 1em 0em; text-align: justify; }
+#content li > p { margin-top: 0.2em; }
+#content pre { font-family: monospace; font-size: 1.0em; }
+#content blockquote { border-left: dotted 1px gray; padding-left: 5px; }
+/* projects list */
+#content dl { text-align: left; }
+#content dt { clear: left; float: left; width: 30%; }
+#content dd { padding-left: 30%; }
+.odd { background-color: #ddd; }
+
+#cc_license { float: right; margin: 21px; }
+#cc_license a { color: black; }
+
+#footer { font-size: 0.8em; clear: both; margin: 1em; padding: 0.3em 0; border-top: solid gray 1px; }
+
+
+/* custom classes */
+.sig { font-style: italic; } 
+.right { float: right; }
+
+/*
+ * fix q tags; we'll manually include quote entities so IE,
+ * the hater of the q tag, remains supported
+ * see: http://alistapart.com/articles/qtag/
+ */
+q:before, q:after { content: ""; }

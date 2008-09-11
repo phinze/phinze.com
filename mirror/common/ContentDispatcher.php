@@ -67,7 +67,7 @@ class ContentDispatcher {
 		$layoutDir      = ($layoutDir == NULL) ?  $this->DEFAULT_LAYOUT_DIR : $layoutDir;
 
 		// set class variables
-		$this->contentVar     = str_replace('/', '', $_GET[$contentVar]);
+		$this->contentVar     = preg_replace(array('/\.\.\//', '/\/$/'), array('', ''), $_GET[$contentVar]);
 		$this->contentDir     = $contentDir;
 		$this->defaultContent = $defaultContent;
 		$this->layoutDir      = $layoutDir;
@@ -91,7 +91,7 @@ class ContentDispatcher {
 	{
 		$cpath = $this->contentDir . $this->contentVar . '.php';
 		// first check alphanumeric, then check existence
-		if ( preg_match( "/^[a-zA-Z0-9\-\_]+$/", $this->contentVar )
+		if ( preg_match( "/^[a-zA-Z0-9\-\_\/]+$/", $this->contentVar )
 			 && file_exists( $cpath ) ) {
 			// output buffering include
 			ob_start();
