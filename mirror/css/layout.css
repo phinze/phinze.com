@@ -12,11 +12,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-}
-
-
-#content {
-	padding: 1em 23% 0em 1em;
+	overflow-y: scroll;
 }
 
 #footer {
@@ -50,6 +46,14 @@ body {
     display: block;
 }
 
+#content {
+	padding: 1em 23% 0em 1em;
+}
+
+#content dt {
+	clear: left;
+	float: left;
+}
 
 #titlebar {
 	height: 74px; /* lock this to prevent layout breaking on text shrink */

@@ -29,11 +29,13 @@ usage ()
 	echo
 	echo "Student Media Interactive Site Deploy Script"
 	echo
-	echo "Usage: $0 <COMMAND>"
+	echo "Usage: $0 <COMMAND> [--force]"
 	echo
 	echo "Where COMMAND is:"
 	echo "	test	Deploy to test environment"
 	echo "	live	Deploy to test environment"
+	echo
+	echo "--force: skip safety checks on live deploy"
 	echo
     if [[ $1 ]]
     then
@@ -48,6 +50,13 @@ case "$1" in
 	test) DEPLOY_SITE=TEST;;
 	*) usage $E_BADARGS;;
 esac
+
+# allow force deploy
+case "$2" in
+	--force) FORCE_DEPLOY=TRUE;;
+	*) usage $E_BADARGS;;
+esac
+
 
 
 # ensure project_info file exists
@@ -113,7 +122,7 @@ fi
 # 	1. we should have the latest revision of the code
 #   2. there should be no uncommitted changes to the working copy
 #
-if [[ $DEPLOY_SITE == "LIVE" ]]
+if [[ $DEPLOY_SITE == "LIVE" && $FORCE_DEPLOY != "TRUE" ]]
 then
 	if [[ $SVN_REMOTEREV != $SVN_LOCALREV ]]
 	then
@@ -155,7 +164,7 @@ fi
 
 # display a nice friendly header 
 echo "-= Deploying $PROJECT_NAME to Live Production Site =-"
-echo "   Revision: $SVN_REV"
+echo "   Revision: $SVN_LOCALREV"
 echo "   Last Changed User: $SVN_AUTHOR"
 echo "   Last Changed Date: $SVN_DATE"
 

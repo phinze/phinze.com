@@ -200,7 +200,6 @@ class ContentDispatcher {
 			} else {
 				$url .=  $_SERVER['HTTP_HOST'].$dir_name;
 			}
-			$url .= '/'; //trailing slash
 			$this->homeUrl = $url;
 			return $url;
 		}
