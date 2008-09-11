@@ -36,8 +36,8 @@
 <ul>
 	<li><a href="<?php echo $this->getHomeUrl(); ?>">home</a></li>
 	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>projects/">projects</a></dt><dd>Serves as both an archive of past work and a list of present interests and endeavors.</dd></dl></li>
-	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>philosophy/">philosophy</a></dt><dd>Rants and reflections on the "why" of topics both technical and general.</dd></dl></li>
-	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>academics/">academics</a></dt><dd>Information about courses I have taken and details of my toils at Marquette University.</dd></dl></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>aboutme/">about me</a></dt><dd>Who <em>is</em> this guy anyways?</dd></dl></li>
+	<li><dl><dt><a href="<?php echo $this->getHomeUrl(); ?>resume/">resume</a></dt><dd>Places I've been, classes I've taken, all in one conveniently formal package.</dd></dl></li>
 </ul>
 </div>
 <div id="content">
