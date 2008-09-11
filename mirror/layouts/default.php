@@ -7,6 +7,8 @@
     <!--[if lte IE 6]> <link rel="stylesheet" type="text/css" href="<?php echo $this->getHomeUrl(); ?>css/ie-lte6.css" /> <![endif]-->
 	<script type="text/javascript" src="<?php echo $this->getHomeUrl(); ?>js/FancyZoom.js"></script>
 	<script type="text/javascript" src="<?php echo $this->getHomeUrl(); ?>js/FancyZoomHTML.js"></script>
+	<script type="text/javascript" src="<?php echo $this->getHomeUrl(); ?>js/flashreplace.js"></script>
+
     <style type="text/css">
     @import url("<?php echo $this->getHomeUrl(); ?>css/phinze.css");
 	<?php

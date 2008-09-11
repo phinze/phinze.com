@@ -14,6 +14,7 @@ $projectList = array(
 	'Recently' => array(
 		'XINU' => array(
 			'desc' => 'XINU is most definitely <em>not</em> UNIX.',
+			'link' => 'http://xinu.mscs.mu.edu/',
 		)
 	),
 	'Long Ago' => array(
@@ -22,9 +23,11 @@ $projectList = array(
 		),
 		'zoomquilt' => array(
 			'desc' =>  'Recursive, collaborative artwork',
+			'link' => 'zoomquilt/',
 		),
 		'kellysmurals.com' => array(
 			'desc' =>  'Kelley paints custom murals as a summer job, and she wanted a website',
+			'link' => 'http://sandbox.phinze.com/kelley/',
 		),
 		'marquetteradio.mu.edu' => array(
 			'desc' =>  'One of the sites that I reworked in my first year at Student Media Interactive',
