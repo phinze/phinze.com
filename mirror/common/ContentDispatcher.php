@@ -11,18 +11,18 @@
  * Use Case:
  *      [index.php]
  *      require_once('common/ContentDispatcher.php');
- * 		$cd = new ContentDispatcher();
+ * 	$cd = new ContentDispatcher();
  *      $cd->displayPage();
  *
  *      [layouts/default.php]
- * 		echo "<h1>";
- * 		$this->displayTitle();
- * 		echo "</h1>\n<div id=\"content">";
- * 		$this->displayContent();
- * 		echo "</div>";
+ * 	echo "<h1>";
+ * 	$this->displayTitle();
+ * 	echo "</h1>\n<div id=\"content">";
+ *      $this->displayContent();
+ *      echo "</div>";
  *
  *      [content/main.php]
- *      $pagetitle = "Main Page"
+ *      <?php $pagetitle = "Main Page" ?>
  *      <p>Content here.</p>
  *
  * For displayTitle to work set the $title variable in a content page.
@@ -58,20 +58,13 @@ class ContentDispatcher {
 	 *                   should include trailing backslash.
 	 * @param defaultContent value to use if contentVar is blank or invalid.
 	 */
-	function ContentDispatcher( $contentVar=NULL,
-								$contentDir=NULL,
-								$defaultContent=NULL,
-								$layoutDir=NULL)
+	function ContentDispatcher($contentVar=NULL, $contentDir=NULL, $defaultContent=NULL, $layoutDir=NULL)
 	{
 		// hack to flip in defaults; only constants allowed in args--odd.
-		$contentVar     = ($contentVar == NULL) ?
-							$this->DEFAULT_CONTENT_VAR : $contentVar;
-		$contentDir     = ($contentDir == NULL) ?
-							$this->DEFAULT_CONTENT_DIR : $contentDir;
-		$defaultContent = ($defaultContent == NULL) ?
-							$this->DEFAULT_CONTENT : $defaultContent;
-		$layoutDir      = ($layoutDir == NULL) ?
-							$this->DEFAULT_LAYOUT_DIR : $layoutDir;
+		$contentVar     = ($contentVar == NULL) ?  $this->DEFAULT_CONTENT_VAR : $contentVar;
+		$contentDir     = ($contentDir == NULL) ?  $this->DEFAULT_CONTENT_DIR : $contentDir;
+		$defaultContent = ($defaultContent == NULL) ?  $this->DEFAULT_CONTENT : $defaultContent;
+		$layoutDir      = ($layoutDir == NULL) ?  $this->DEFAULT_LAYOUT_DIR : $layoutDir;
 
 		// set class variables
 		$this->contentVar     = str_replace('/', '', $_GET[$contentVar]);

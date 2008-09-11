@@ -9,9 +9,9 @@
 
 PROJECT_NAME="Paul Hinze MSCS Web Site"
 
-LIVE_SERVER="morbius.mscs.mu.edu"
+LIVE_SERVER="phinze.com"
 LIVE_USER="phinze"
-LIVE_PATH="~/public_html/"
+LIVE_PATH="~/phinze.com/"
 
 TEST_SERVER="localhost"
 TEST_USER="phinze"

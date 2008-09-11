@@ -61,7 +61,7 @@
 <script type="text/javascript">
 function hideCourses() {
 	courses_ul = document.getElementById('courses');
-	years_li = courses_ul.getElementsByTagName('li');
+	years_li = courses_ul.getChildren();
 	for (i = 0; i < years_li.length; i++) {
 		document.write((years_li[i].innerHTML));
 	}
