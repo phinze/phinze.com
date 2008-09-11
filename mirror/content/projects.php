@@ -9,7 +9,11 @@ $projectList = array(
 	    ),
 		'Apostles &amp; Markets' => array(
 			'desc' => 'Taking a cutting edge curriculum online',
-		)
+		),
+		'phinze.com' => array(
+			'desc' => 'The code behind this very site',
+			'link' => 'phinze/'
+		),
 	),
 	'Recently' => array(
 		'XINU' => array(
@@ -22,7 +26,7 @@ $projectList = array(
 			'desc' =>  'Making Flash do what it was never ever meant to do',
 		),
 		'zoomquilt' => array(
-			'desc' =>  'Recursive, collaborative artwork',
+			'desc' =>  'Interactive, collaborative artwork',
 			'link' => 'zoomquilt/',
 		),
 		'kellysmurals.com' => array(
