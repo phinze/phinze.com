@@ -2,7 +2,11 @@
 <html>
 <head>
     <title>Paul Hinze | A Convergence of Distractions</title>
-	<link rel="shortcut icon" href="<?php echo $this->getHomeUrl(); ?>favicon.ico" type="image/x-icon" />
+	<link rel="icon" type="image/png" href="<?php echo $this->getHomeUrl(); ?>favicon.png" />
+    <!--[if IE]> <link rel="stylesheet" type="text/css" href="<?php echo $this->getHomeUrl(); ?>css/ie-all.css" /> <![endif]-->
+    <!--[if lte IE 6]> <link rel="stylesheet" type="text/css" href="<?php echo $this->getHomeUrl(); ?>css/ie-lte6.css" /> <![endif]-->
+	<script type="text/javascript" src="<?php echo $this->getHomeUrl(); ?>js/FancyZoom.js"></script>
+	<script type="text/javascript" src="<?php echo $this->getHomeUrl(); ?>js/FancyZoomHTML.js"></script>
     <style type="text/css">
     @import url("<?php echo $this->getHomeUrl(); ?>css/phinze.css");
 	<?php
@@ -14,16 +18,9 @@
 	a, a:visited, a:active { color: <?php echo $color; ?>; }
 	#nav a:hover { color: <?php echo $color; ?>; } 
     </style>
-    <!--[if IE]>
-    <link rel="stylesheet" type="text/css" href="<?php echo $this->getHomeUrl(); ?>css/ie-all.css" />
-    <![endif]-->
-
-    <!--[if lte IE 6]>
-    <link rel="stylesheet" type="text/css" href="<?php echo $this->getHomeUrl(); ?>css/ie-lte6.css" />
-    <![endif]-->
 </head>
 
-<body>
+<body onload="setupZoom();">
 <div id="qotd"><?php include('quote.php'); ?></div>
 <div id="titlebar">
 	<a href="<?php echo $this->getHomeUrl(); ?>"><img src="<?php echo $this->getHomeUrl(); ?>img/head.png" width="240" height="75" alt="head" /></a>

@@ -21,6 +21,7 @@ a:hover { color: #000; text-decoration: underline; }
 #content h5 { font-size: 1.0em; margin: 0.5em 0; font-weight: bold; }
 #content h6 { font-size: 0.8em; margin: 0.5em 0; font-weight: bold; }
 strong, b { font-weight: bold; } 
+a img { border: 0; }
 
 body { background-color: #ccc; background-image: none; overflow-y: scroll; }
 a, a:visited, a:active { color: #a30; }
@@ -32,7 +33,7 @@ a, a:visited, a:active { color: #a30; }
 	background: url('../img/titlebar-shadow-bot.png') repeat-x bottom; font-size: 48px; font-weight: bold; 
 	height: 55px; margin: 0; padding: 10px 267px; margin-bottom: 3px; 
 } 
-#titlebar img { float: left; margin: 0 0 0 17px; border: 0; }
+#titlebar img { float: left; margin: 0 0 0 17px; }
 
 #nav { font-family: helvetica, verdana, times, serif !important; }
 #nav ul { float: right; width: 20%; list-style: none; }
@@ -47,11 +48,13 @@ a, a:visited, a:active { color: #a30; }
 #content li > p { margin-top: 0.2em; }
 #content pre { font-family: monospace; font-size: 1.0em; }
 #content blockquote { border-left: dotted 1px gray; padding-left: 5px; }
+#content img { padding: 0 0 15px 15px; }
 /* projects list */
 #content dl { text-align: left; }
 #content dt { clear: left; float: left; width: 30%; }
 #content dd { padding-left: 30%; }
 .odd { background-color: #ddd; }
+
 
 #cc_license { float: right; margin: 21px; }
 #cc_license a { color: black; }
