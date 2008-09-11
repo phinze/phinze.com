@@ -1,4 +1,4 @@
-<?php $pagetitle="projects/rb";
+<?php $pagetitle="proj/rb";
 $linkUrl = $this->getHomeUrl() . 'content/projects/';
 ?>
 <h2>Rubber Band</h2>
@@ -26,12 +26,21 @@ have any sort of insight to reduce code duplication for each data type.  There
 was no framework, only raw PHP logic mixed with HTML for each page.  For an 
 example, here's list-users.php:</p>
 
-<pre><code>
+<a style="display: block; float: right;" href="<?php echo $linkUrl; ?>img/rb_front.png" title="Links interface">
+	<img src="<?php echo $linkUrl; ?>img/rb_links.png" style="width: 200px"/>
+</a>
+
 <?php 
-$list_users = file_get_contents(dirname(__FILE__) . '/../../extras/list-users.php');
-echo htmlspecialchars($list_users);
+require_once('lib/geshi/geshi.php');
+$rb_code = file_get_contents(dirname(__FILE__) . '/../../extras/list-users.php');
+$geshi = new GeSHi($rb_code, 'php');
+echo $geshi->parse_code();
 ?>
-</code></pre>
 
-
-<p>In a word, it was gross.  But somehow it worked.</p>
+<p>Spitting out HTML with <code>echo()</code>?  Database code on every page??  Inline SQL?!?  
+Why would I ever want anyone to see this code?!!  In a word, it was gross.  I 
+get embarassed looking at it now.  But I publish it here because, at the end of 
+the day, it did what it was supposed to do, and that was a serious 
+accomplishment for a high school sophomore.  And so with a wince and a warning (and 
+a smidge of nostalgic pride) I give you this link: <a href="<?php echo 
+$linkUrl; ?>code/rubberband.tar.gz">rubberband.tar.gz</a></p>

@@ -5,6 +5,7 @@ $projectList = array(
 	'Currently' => array(
 		'imageareas' => array(
 			'desc' => 'My Google Summer of Code 2008 project for Gallery',
+			'link' => 'imageareas/'
 	    ),
 		'Apostles &amp; Markets' => array(
 			'desc' => 'Taking a cutting edge curriculum online',

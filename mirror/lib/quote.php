@@ -1,5 +1,5 @@
 <?php
-    // spit out random quote from the quotes file
+    // spit out random quote from the quotes fils
     $quotesfile = file('extras/quotes');
     $quotes = array();
     $i = 0;

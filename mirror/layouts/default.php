@@ -21,7 +21,7 @@
 </head>
 
 <body onload="setupZoom();">
-<div id="qotd"><?php include('quote.php'); ?></div>
+<div id="qotd"><?php include('lib/quote.php'); ?></div>
 <div id="titlebar">
 	<a href="<?php echo $this->getHomeUrl(); ?>"><img src="<?php echo $this->getHomeUrl(); ?>img/head.png" width="240" height="75" alt="head" /></a>
 	<!--Creative Commons License-->
