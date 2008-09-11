@@ -18,4 +18,4 @@ TEST_USER="phinze"
 TEST_PATH="~/public_html/"
 
 COPY_COMMAND="scp"
-COPY_ARGS="-rpqP 8022"
+COPY_ARGS="-rpq"
