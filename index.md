@@ -3,7 +3,7 @@ layout: base
 title: ~/phinze
 ---
 
-Sometimes a clean slate is nice...
+command line forensics
 ==================================
 
 {% highlight console %}
@@ -24,25 +24,26 @@ $ cat 1dad4013c9d7688e54c2a2dbe0a059b3.png
 
 {% highlight console %}
 $ sqlite3 ~/.mozilla/firefox/phinze.firefoxprofile/places.sqlite "select url from moz_places order by url;" > /tmp/visited_urls
-$ cat visited_urls | perl -pe 's|https?://(.*?)/.*|\1|' | uniq -c | sort -rn | head -n 50 | pr -2T
+$ cat /tmp/visited_urls | perl -pe 's|https?://(.*?)/.*|\1|' | uniq -c | sort -rn | head -n 50 | pr -3Tw120
 
-    885 www.facebook.com                     16 github.com                            7 www.mozilla.com
-    311 www.google.com                       16 en.wikipedia.org                      7 www.fsf.org
-    118 news.bbc.co.uk                       15 apps.facebook.com                     7 www.archlinux.org
-     85 github.com                           14 rails.lighthouseapp.com               7 technologizer.com
-     79 www.youtube.com                      14 bit.ly                                7 sclegacy.com
-     57 wiki.archlinux.org                   12 groups.google.com                     7 research.uiowa.edu
-     46 mail.google.com                      12 ask.metafilter.com                    7 pygments.org
-     43 twitter.com                          11 support.dell.com                      7 makeofficebetter.com
-     35 sandbox.phinze.com                    9 code.google.com                       7 gist.github.com
-     27 redmine.ruby-lang.org                 8 www.ruby-lang.org                     7 en.gravatar.com
-     22 www.somethingawful.com                8 www.npr.org                           7 codezen.org
-     22 www.mininova.org                      8 www.feedly.com                        7 answers.launchpad.net
-     22 www.google.com                        8 wiki.github.com                       6 xkcd.com
-     20 bbs.archlinux.org                     8 vpn.uiowa.edu                         6 www.slackware.com
-     19 redmine.research.uiowa.edu            8 pandora.com                           6 www.python.org
-     18 email.uiowa.edu                       8 localhost:3000                        6 www.netflix.com
-     16 vimeo.com                             8 gallery.menalto.com
+   5183 www.google.com                      107 rubyforge.org                        63 www.rubybrain.com
+   1430 www.facebook.com                    103 www.thinkgeek.com                    63 www.redmine.org
+   1276 redmine.research.uiowa.edu          101 code.google.com                      63 www.railsbrain.com
+    886 github.com                          101 cnsurvey.biz                         60 web4.sendtoprint.net
+    357 mail.google.com                      93 www.mail-archive.com                 58 www.flickr.com
+    346 news.bbc.co.uk                       87 email.uiowa.edu                      57 xkcd.com
+    284 twitter.com                          86 rails.lighthouseapp.com              55 www.ruby-forum.com
+    283 uiris.uiowa.edu                      79 wiki.github.com                      54 ubuntuforums.org
+    251 images.google.com                    79 stackoverflow.com                    54 thepeerhub.com
+    250 en.wikipedia.org                     78 hris.uiowa.edu                       54 googleads.g.doubleclick.net
+    228 iowacity.craigslist.org              76 www.mininova.org                     51 lifehacker.com
+    152 awesome.naquadah.org                 75 bit.ly                               51 launchpad.net
+    145 localhost:3000                       71 www.prototypejs.org                  45 www.apostlesandmarkets.com
+    143 jobs.uiowa.edu                       71 wiki.archlinux.org                   44 blade.nagaokaut.ac.jp
+    136 www.youtube.com                      69 research.uiowa.edu                   44 bbs.archlinux.org
+    128 192.168.1.100:3000                   65 gist.github.com                      43 xinu.mscs.mu.edu
+    109 groups.google.com                    64 www.new.facebook.com
+
 {% endhighlight %}
 
 {% highlight console %}
