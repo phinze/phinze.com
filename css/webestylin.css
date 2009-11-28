@@ -43,3 +43,18 @@ pre, code {
   padding-left: 5px;
   border-left: 1px solid gray;
 }
+
+.footnotes {
+  font-size: 10px;
+}
+
+.footnotes > ol > li {
+  position: relative;
+}
+.footnotes > ol > li > p {
+  display: inline;
+}
+
+.footnotes hr {
+  display: none;
+}
