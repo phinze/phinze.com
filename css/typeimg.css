@@ -1,0 +1,49 @@
+body {
+padding-top: 5em;
+font-family: Palatino, Georgia, serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, img { margin: 0; padding: 0; }
+
+a, a:active {
+  color: black; 
+}
+
+img {
+  height: 2em;
+}
+
+.althover-span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 8em;
+  font-family: Palatino, Georgia, serif;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: lighter;
+  margin-bottom: 0.2em;
+}
+
+p {
+  font-size: 2em;
+}
+
+.writeheavy {
+  font-size: 220%;
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
