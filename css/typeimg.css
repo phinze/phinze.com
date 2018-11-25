@@ -26,24 +26,17 @@ img {
 }
 
 h1 {
-  font-size: 8em;
+  font-size: 6em;
   font-family: Palatino, Georgia, serif;
   font-weight: lighter;
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: lighter;
   margin-bottom: 0.2em;
 }
 
 p {
-  font-size: 2em;
-}
-
-.writeheavy {
-  font-size: 220%;
-  display: inline-block;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
+  font-size: 1.5em;
 }
